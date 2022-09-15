@@ -638,6 +638,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -728,24 +732,19 @@ video {
   line-height: 1rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -778,6 +777,90 @@ video {
   }
 }
 
+@media  screen and (max-width:499px) {
+  /* Slideshow container */
+
+  .slideshow-container {
+    max-width: 80%;
+    /* position: relative; */
+    margin: auto;
+  }
+
+  .fade > img{
+    width:80%;
+    height: auto;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  /* Hide the images by default */
+
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+
+  .prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: -250px;
+    width: auto;
+    /* margin-top: -50px; */
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+
+  .next {
+    right: -75%;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Fading animation */
+
+  .fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+}
+
 .hover\:text-textGray:hover {
   --tw-text-opacity: 1;
   color: rgb(64 64 64 / var(--tw-text-opacity));
@@ -793,10 +876,6 @@ video {
     display: block;
   }
 
-  .sm\:grid {
-    display: grid;
-  }
-
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -810,11 +889,6 @@ video {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .sm\:text-base {
@@ -841,8 +915,20 @@ video {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-3 {
     width: 0.75rem;
+  }
+
+  .md\:w-4\/5 {
+    width: 80%;
   }
 
   .md\:text-4xl {
@@ -857,11 +943,6 @@ video {
 
   .md\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }

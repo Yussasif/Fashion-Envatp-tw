@@ -101,15 +101,31 @@
             <h2 class="text-xl sm:text-2xl font-bold mb-3">Gallery</h2>
             <p class=" text-sm sm:text-base md:text-xl text-center">Have a look at a collection of my recent works.</p>
           </div>
-          <div class="hidden sectionThreedown w-4/5 sm:grid grid-cols-3 gap-4 mx-auto mt-6">
-            <div class="box1"><img src="images/hls-44.png" alt="" /></div>
-            <div class="box2"><img src="images/daniel.png" alt="" /></div>
-            <div class="box3"><img src="images/joanna.png" alt="" /></div>
-            <div class="box4"><img src="images/nick.png" alt="" /></div>
-            <div class="box5"><img src="images/peter.png" alt="" /></div>
-            <div class="box6"><img src="images/analise.png" alt="" /></div>
-          </div>
+
+          <div class="sectionThreedown block md:w-4/5 md:hidden grid-cols-3 gap-4 mx-auto mt-6 mySlideshow-container">
+            
+            <div class="box1 mySlides fade"><img src="images/hls-44.png" alt="" /></div>
+            <div class="box2 mySlides fade"><img src="images/daniel.png" alt="" /></div>
+            <div class="box3 mySlides fade"><img src="images/joanna.png" alt="" /></div>
+            <div class="box4 mySlides fade"><img src="images/nick.png" alt="" /></div>
+            <div class="box5 mySlides fade"><img src="images/peter.png" alt="" /></div>
+            <div class="box6 mySlides fade"><img src="images/analise.png" alt="" /></div>
+
+            <!-- Next and previous buttons -->
+  <a class="prev md:hidden" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next md:hidden" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div class="sectionThreedown hidden md:w-4/5 md:grid grid-cols-3 gap-4 mx-auto mt-6">
+            
+  <div class="box1 "><img src="images/hls-44.png" alt="" /></div>
+  <div class="box2 "><img src="images/daniel.png" alt="" /></div>
+  <div class="box3 "><img src="images/joanna.png" alt="" /></div>
+  <div class="box4 "><img src="images/nick.png" alt="" /></div>
+  <div class="box5"><img src="images/peter.png" alt="" /></div>
+  <div class="box6 "><img src="images/analise.png" alt="" /></div>
     </section>
     
+
+    <script src="script.js"></script>
 </body>
 </html>

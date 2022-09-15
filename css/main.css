@@ -642,12 +642,12 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-4\/5 {
@@ -664,14 +664,6 @@ video {
 
 .w-3\/5 {
   width: 60%;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .grid-cols-3 {
@@ -824,10 +816,6 @@ video {
     width: 0.75rem;
   }
 
-  .md\:border-solid {
-    border-style: solid;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -846,11 +834,6 @@ video {
 
   .lg\:w-2\/5 {
     width: 40%;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .lg\:text-lg {

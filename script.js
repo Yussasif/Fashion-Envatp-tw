@@ -1,3 +1,15 @@
+// hamburger
+
+const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
+
+btn.addEventListener('click', () => {
+    btn.classList.toggle('open')
+    nav.classList.toggle('flex')
+    nav.classList.toggle('hidden')
+})
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -26,3 +38,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+

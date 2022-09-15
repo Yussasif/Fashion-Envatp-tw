@@ -14,6 +14,9 @@
 <body class="bg-lightGray w-full">
     <section class="hero-section">
         <nav class=" relative  p-6">
+          
+            <div class="pt-2">
+
             <div class=" hidden justify-end space-x-6  md:flex">
                 <a href="index.html" class= "text-navGray hover:text-textGray active:text-textGray">Home</a>
                 <a href="#" class= "text-navGray hover:text-textGray active:text-textGray">About Me</a>
@@ -21,6 +24,25 @@
                 <a href="#" class= "text-navGray hover:text-textGray active:text-textGray">Clients</a>
                 <a href="#" class= "text-navGray hover:text-textGray active:text-textGray">Contact Me</a>
             </div>
+
+                <!-- hamburger icon -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                  <span class="hamburger-top"></span>
+                  <span class="hamburger-middle"></span>
+                  <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="md:hidden">
+              <div id="menu" 
+                  class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Gallery</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact Me</a>
+              </div>
         </nav>
 
         <div  class=" container mx-auto ml-6 mt-48 md:mt-32">

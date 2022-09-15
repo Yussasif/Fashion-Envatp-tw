@@ -75,4 +75,58 @@
     from {opacity: .4}
     to {opacity: 1}
   }
-}
+
+
+  /* Hamburger Menu  */
+  .hamburger {
+    position: relative;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+
+  .hamburger-middle {
+    transform: translateY(10px);
+  }
+  .hamburger-bottom {
+    transform: translateY(20px);
+  }
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  .open .hamburger-middle {
+    display: none;
+  }
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  } 
+
+  @media screen and (max-width: 374px) {
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+      background-color: white;
+    }
+  }
+ 
+ 
+} 
